@@ -1,28 +1,3 @@
-
-
-#SET UP:
-
-# 1. INSTALL BELOW LIBRARIES
-
-        #pip install -r requirements.txt
-
-        # pip install nltk
-
-        # pip install spacy==2.3.5
-
-        # pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.3.1/en_core_web_sm-2.3.1.tar.gz
-
-        # pip install pyresparser
-
-# 2. CREAT A FOLDER AND NAME IT (e.g. resume)
-        #2.1 create two more folders inside this folder (Logo and Uploaded_Resumes)
-        #2.2 create two python files (App.py and Courses.py)
-
-# 3. START YOUR SQL DATABASE
-
-
-# 4. CONTINUE WITH THE FOLLOWING CODE...
-
 import streamlit as st
 import pandas as pd
 import base64,random
@@ -43,6 +18,8 @@ import pafy #for uploading youtube videos
 import plotly.express as px #to create visualisations at the admin session
 import nltk
 nltk.download('stopwords')
+
+from pyresparser import ResumeParser
 
 
 def fetch_yt_video(link):
