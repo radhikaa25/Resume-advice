@@ -1,3 +1,5 @@
+import nltk
+nltk.data.path.append(r"C:\Users\sharm\AppData\Roaming\nltk_data")
 import streamlit as st
 import pandas as pd
 import base64,random
